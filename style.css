@@ -518,4 +518,15 @@ footer {
   .riport {
     display: none;
   }
+
+  .menu-bar-active{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 55%;
+    gap: 5px;
+    margin-block: 40px 30px;
+  
+  }
 }
