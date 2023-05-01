@@ -6,6 +6,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  
+  
+	--bg-main: #F5FBFF;
+	--bg-footer: #333333;
+	--bg-footer-bottom: #000000;
+	--fontcolor1: #fff;
+	--fontcolor2: #000;
+	--fontcolor-menu: #767676;
+	--fontcolor-menu-hvr: #333333;
+	--hero: #009DFF;
+	--hero-light: #54ade4;
+  }
+
+
+
 .allergia {
     margin-top: 20px;
 }
@@ -34,7 +50,7 @@
 
 .box {
 
-	background-color: #99FF99;
+	background-color: var(--hero-light);
 	align-items: center;
 	border: 4px solid white;
 	border-radius: 10px;
@@ -69,7 +85,7 @@
 	display: flex;
 	padding: 12px;
 	margin: 10px;
-	background-color: #333;
+	background-color:var(--fontcolor-menu);
 	color: #fff;
 	display: flex;
 	border-radius: 5px;
@@ -82,8 +98,8 @@
 	display: block;
 }
 
-.box a {
-	display: flex;
+.types-btn {
+	display: none;
 	width: 200px;
 	height: 200px;
 	border-radius: 100%;
@@ -96,41 +112,61 @@
 	font-size: 20px;
 }
 
-.box a:hover {
-	background: #333;
-	transition: all 0.6s ease;
-	color: #ffffff;
-}
 
-.types-1 a {
+
+.types-1 .types-btn {
 	background: url(assets/img/etel-allergia.jpg) center/cover;	
 }
 
-.types-2 a {	
+.types-2 .types-btn {	
 	background: url(assets/img/femesfog-allergia.jpg) center/cover;	
 }
 
-.types-3 a {
+.types-3 .types-btn {
 	background: url(assets/img/gyogyszer-allergia.png) center/cover;	
 }
 
-.types-4 a {
+.types-4 .types-btn {
 	background: url(assets/img/pollen-allergia.jpg) center/cover;
 }
 
-.types-5 a {
+.types-5 .types-btn {
 	background: url(assets/img/poratka-allergia.jpg) center/cover;
 }
 
-.types-6 a {
+.types-6 .types-btn {
 	background: url(assets/img/Macska-kutya-allergia.jpg) center/cover;
 }
 
-.types-7 a {
+.types-7 .types-btn {
 	background: url(assets/img/rovar-allergia.webp) center/cover;
 }
 
-@media (max-width: 576px){
+.types-btn:hover {
+	background: #333;
+	transition: all 0.6s ease;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+
+/* ACTIVE CONTENT */
+
+
+.types-content {
+	display: none;
+	color: var(--fontcolor2);
+	font-weight: bold;
+}
+
+.active {
+	display: flex;
+}
+
+
+
+
+@media (max-width: 992px){
 
 .types {
 	display: grid;
