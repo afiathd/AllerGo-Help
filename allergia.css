@@ -164,8 +164,6 @@
 }
 
 
-
-
 @media (max-width: 992px){
 
 .types {
@@ -178,5 +176,4 @@
 	place-content: center;
 	gap: 15px;	
 }
-
 }
