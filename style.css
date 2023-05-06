@@ -506,6 +506,9 @@ footer {
    
   }
 
+  .logo {
+    margin-left: 5px;
+  }
   .active {
     display: flex;
   }
