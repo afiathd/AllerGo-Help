@@ -85,8 +85,6 @@ header {
 }
 
 .menu-container {
-  /* position: sticky;
-  top: 0px; */
   overflow: auto;
   display: flex;
   flex-direction: row;
@@ -515,15 +513,12 @@ footer {
   .menu-container {
     display: flex;
     flex-direction: row;
+    z-index: 9999999;
 
   }
  .menu-bar {
     display: none;
   
-  }
-
-  .logo {
-    padding-top: 20px;
   }
 
   .riport {
