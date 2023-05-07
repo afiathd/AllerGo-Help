@@ -19,6 +19,7 @@
   --fontcolor-menu: #767676;
   --fontcolor-menu-hvr: #333333;
   --hero: #009DFF;
+  --months: rgba(226, 230, 216, 0.75);
 }
 
 svg {
@@ -41,6 +42,7 @@ header {
   position: sticky;
   top: -50px;
   padding-bottom: 20px;
+  z-index: 99999;
 }
 
 .normal-width {
@@ -243,7 +245,7 @@ header {
   justify-content: flex-start;
   width: 300px;
   font-family: 'Rubik', sans-serif;
-  margin-top: 50px;
+  padding-top: 30px;
 
 }
 
@@ -368,14 +370,17 @@ footer {
   justify-content: flex-start;
   width: 300px;
   font-family: 'Rubik', sans-serif;
-  z-index: -1;
-
+ 
 }
 
 .left-item .icon {
   width:100px;
   display: grid;
   place-content: center;
+}
+
+.inactive-grid {
+  display: none;
 }
 
 .left-item .logo svg {
@@ -419,7 +424,7 @@ footer {
 }
 
 .left-item svg {
-  display: none;
+  display: flex;
 }
 
 .middle-item {
@@ -479,6 +484,81 @@ footer {
   
 }
 
+/* CAROUSEL */
+
+.carousel-container {
+  height: 420px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.car-box {
+  display: flex;
+  height: 100%;
+  width: 300vw;
+  transition: all 0.5s ease;
+  transform: translateX(-200vw);
+}
+
+.car-img {
+  position: relative;
+  width: 100vw; 
+}
+
+.car-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.car-text {
+  padding: 35px;
+  background-color: var(--months);
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 27%, 400px;
+}
+
+.text1 {
+  position: absolute;
+  top: 27%;
+  right: 10%;
+}
+
+.text2 {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  
+}
+
+.text3 {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+}
+
+
+
+
+.btn-container {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-inline: 5%;
+}
+
+.btn {
+  padding: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: var(--months);
+  border-radius: 10px;
+}
+
 
 
 /* MEDIA QUERIS */
@@ -490,6 +570,11 @@ footer {
 
   header {
     margin-top: 15px;
+    background-color: var(--bg-main);
+    position: sticky;
+    top: 0px;
+    padding-bottom: 20px;
+    
   }
 
   .hamburger {
@@ -508,6 +593,7 @@ footer {
 
   .logo {
     margin-left: 5px;
+    margin-top: 2px;
   }
   .active {
     display: flex;

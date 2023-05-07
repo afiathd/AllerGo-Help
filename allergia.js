@@ -1,11 +1,4 @@
 
-/* const femAllergia = document.getElementById('types-2')
-const allergiaBox = document.querySelector('.box')
-const typesContent = document.querySelector('.types-content')
-const typesBtn = document.querySelector('.types-btn')
- */
-
-
 const etelAllergia = document.getElementById('types-1')
 const types1Btn = document.getElementById('types-1-btn')
 const types1Content = document.getElementById('types-1-content')

@@ -1,3 +1,34 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  
+  
+  --bg-main: #F5FBFF;
+  --bg-footer: #333333;
+  --bg-footer-bottom: #000000;
+  --fontcolor1: #fff;
+  --fontcolor2: #000;
+  --fontcolor-menu: #767676;
+  --fontcolor-menu-hvr: #333333;
+  --hero: #009DFF;
+}
+
+
 .jelentes p {
     margin-block: 10px;
+}
+
+li {
+    margin-block: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--hero);
 }

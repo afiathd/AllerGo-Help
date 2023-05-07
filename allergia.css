@@ -44,7 +44,7 @@
 }
 
 .box {
-
+	min-height: 315px;
 	background-color: var(--hero-light);
 	align-items: center;
 	border: 4px solid white;
@@ -171,4 +171,6 @@
 	place-content: center;
 	gap: 15px;	
 }
+
+
 }
