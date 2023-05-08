@@ -91,7 +91,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 90px;
+  height: 92px;
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -487,10 +487,11 @@ footer {
 /* CAROUSEL */
 
 .carousel-container {
-  height: 420px;
+  height: 500px;    /* 420px */
   width: 100%;
   overflow: hidden;
   position: relative;
+  
 }
 
 .car-box {
@@ -503,12 +504,26 @@ footer {
 
 .car-img {
   position: relative;
-  width: 100vw; 
+  width: 100vw;
+  object-fit: cover;
 }
 
-.car-img img {
+.car-1 {
+  background: url(assets/img/allergia-pollen.webp) no-repeat center/cover;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+}
+
+.car-2 {
+  background: url(assets/img/banner.webp) no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+}
+
+.car-3 {
+  background: url(assets/img/doctor.webp) no-repeat top/cover;
+  width: 100%;
+  height: 100%;
 }
 
 .car-text {
@@ -546,17 +561,24 @@ footer {
   position: absolute;
   bottom: 2rem;
   display: flex;
-  width: 90%;
+  width: 100%;
+  justify-content: center;
+ 
+}
+
+.btn-place {
+  display: flex;
   justify-content: space-between;
-  margin-inline: 5%;
+  gap: 2rem;
 }
 
 .btn {
-  padding: 1rem;
+  padding: 0.8rem;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: var(--months);
-  border-radius: 10px;
+  background-color: rgba(224, 239, 196, 0.866);
+  border-radius: 50%;
+  border: none;
 }
 
 
@@ -669,4 +691,53 @@ footer {
     margin-block: 40px 30px;
   
   }
+
+  .car-1 {
+    background: url(assets/img/allergia-pollen-m.webp) no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .car-2 {
+    background: url(assets/img/banner-m.webp) no-repeat left/cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .car-3 {
+    background: url(assets/img/doctor-m.webp) no-repeat top/cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .car-text {
+    padding: 15px;
+    background-color: var(--months);
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .text1 {
+    width: 60%;
+    position: absolute;
+    top: 55%;
+    right: 8%;
+  }
+  
+  .text2 {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    
+  }
+  
+  .text3 {
+    width: 55%;
+    position: absolute;
+    top: 25%;
+    right: 8%;
+  }
+
 }

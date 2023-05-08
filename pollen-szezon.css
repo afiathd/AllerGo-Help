@@ -46,6 +46,7 @@
 	justify-content: center;
 	margin-block: 50px;
 	font-size: 40px;
+	padding: 8px;
 
 }
 
@@ -96,7 +97,7 @@
 
 @media (max-width: 576px) {
 	.months-container {
-		width: 60%;
+		width: 70%;
 		margin-inline: auto;
 		display: flex;
 		flex-wrap: wrap;

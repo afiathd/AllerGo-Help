@@ -19,6 +19,9 @@
   --hero: #009DFF;
 }
 
+main {
+  margin-bottom: 20px;
+}
 
 .jelentes p {
     margin-block: 10px;

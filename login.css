@@ -106,7 +106,7 @@
 
   /* MEDIA QUERIES */
   
-  @media (max-width: 552px) {
+  @media (max-width: 576px) {
     
     .form-container {
       display: flex;
