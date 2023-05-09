@@ -294,47 +294,126 @@ header {
 
 
 /* MAIN */
-
-
-.hero-width {
+.greeting{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-end;
+  margin-block: 20px;
 }
 
-.hero-container {
-  width: 100%;
-  height: 500px;
-  background: url(assets/img/banner.jpg) no-repeat right/cover;
-  display: flex; 
+.greeting h1 {
+  font-size: 2rem;
 }
 
-.hero-box {
-  width: 40%;
-  min-width: 250px;
-  height: auto;
-  background-color: #e0e8c298;
-  border-radius: 20px;
-  margin-inline: 30px;
-  margin-top: 60px;
-
-}
-
-
-.hero-content {
+.greeting h2 {
   display: flex;
-  flex-direction: column;
-  width: 90%;
-  padding: 20px;
-
-}
-
-.hero-content h2 {
-  display: flex;
-  margin-top: 10px;
   justify-content: flex-end;
-  align-items: flex-end;
+  font-size: 1.5rem;
+
+}
+
+.content p {
+	margin-block: 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+}
+
+/* CAROUSEL */
+
+.carousel-container {
+  height: 500px;    /* 420px */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.car-box {
+  display: flex;
+  height: 100%;
+  width: 300vw;
+  transition: all 0.5s ease;
+  transform: translateX(-200vw);
+}
+
+.car-img {
+  position: relative;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.car-1 {
+  background: url(assets/img/allergia-pollen.webp) no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+}
+
+.car-2 {
+  background: url(assets/img/banner.webp) no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+}
+
+.car-3 {
+  background: url(assets/img/doctor.webp) no-repeat top/cover;
+  width: 100%;
+  height: 100%;
+}
+
+.car-text {
+  padding: 35px;
+  background-color: var(--months);
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 27%, 400px;
+}
+
+.text1 {
+  position: absolute;
+  top: 27%;
+  right: 10%;
+}
+
+.text2 {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  
+}
+
+.text3 {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+}
+
+
+
+
+.btn-container {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+ 
+}
+
+.btn-place {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.btn {
+  padding: 0.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgba(224, 239, 196, 0.866);
+  border-radius: 50%;
+  border: none;
 }
 
 
@@ -485,102 +564,9 @@ footer {
   
 }
 
-/* CAROUSEL */
-
-.carousel-container {
-  height: 500px;    /* 420px */
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  
-}
-
-.car-box {
-  display: flex;
-  height: 100%;
-  width: 300vw;
-  transition: all 0.5s ease;
-  transform: translateX(-200vw);
-}
-
-.car-img {
-  position: relative;
-  width: 100vw;
-  object-fit: cover;
-}
-
-.car-1 {
-  background: url(assets/img/allergia-pollen.webp) no-repeat center/cover;
-  width: 100%;
-  height: 100%;
-}
-
-.car-2 {
-  background: url(assets/img/banner.webp) no-repeat center/cover;
-  width: 100%;
-  height: 100%;
-}
-
-.car-3 {
-  background: url(assets/img/doctor.webp) no-repeat top/cover;
-  width: 100%;
-  height: 100%;
-}
-
-.car-text {
-  padding: 35px;
-  background-color: var(--months);
-  border-radius: 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  width: 27%, 400px;
-}
-
-.text1 {
-  position: absolute;
-  top: 27%;
-  right: 10%;
-}
-
-.text2 {
-  position: absolute;
-  top: 20%;
-  right: 10%;
-  
-}
-
-.text3 {
-  position: absolute;
-  top: 25%;
-  right: 15%;
-}
 
 
 
-
-.btn-container {
-  position: absolute;
-  bottom: 2rem;
-  display: flex;
-  width: 100%;
-  justify-content: center;
- 
-}
-
-.btn-place {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.btn {
-  padding: 0.8rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: rgba(224, 239, 196, 0.866);
-  border-radius: 50%;
-  border: none;
-}
 
 
 
@@ -642,14 +628,6 @@ footer {
     display: none;
   }
 
-  .hero-container {
-    width: 100%;
-    height: 500px;
-    background: url(assets/img/banner.jpg) no-repeat center/cover;
-    margin-top: 10px;
-    display: flex;
-
-  }
 
   .footer-container {
     height: 250px;
