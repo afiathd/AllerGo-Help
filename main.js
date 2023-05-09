@@ -44,9 +44,9 @@ const right = document.querySelector('.right')
 
 let index = 0
 
-/* setInterval(function () {
+setInterval(function () {
   slide('right')
-}, 10000) */
+}, 10000)
 
 function slide(direction) {
   if (direction === 'right') {
