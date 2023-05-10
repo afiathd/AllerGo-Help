@@ -12,6 +12,8 @@
 	--months: rgba(226, 230, 216, 0.75)
   }
 
+
+
 .szezon-container {
 	width: 100%;
 	height: auto;
@@ -85,6 +87,8 @@
 	padding-inline: 10px;
 	font-size: 25px;
 }
+
+
 
 .months li {
 	margin-block: 15px;
