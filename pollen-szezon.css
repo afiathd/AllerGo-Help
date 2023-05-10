@@ -47,7 +47,10 @@
 	margin-block: 50px;
 	font-size: 40px;
 	padding: 8px;
-
+	background-color: var(--months);
+	border: 2px solid rgba(0, 0, 0, 1);
+	margin-inline: auto;
+	border-radius: 10px;
 }
 
 
@@ -102,5 +105,9 @@
 		flex-direction: column;
 		justify-content: space-between;
 		height: auto;	
+	}
+
+	.elorejelzes h3 {
+		margin-inline: 10px;
 	}
 }
