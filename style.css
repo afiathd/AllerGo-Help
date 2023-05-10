@@ -350,7 +350,7 @@ header {
 }
 
 .car-2 {
-  background: url(assets/img/banner.webp) no-repeat center/cover;
+  background: url(assets/img/allergy.webp) no-repeat center/cover;
   width: 100%;
   height: 100%;
 }
@@ -378,15 +378,15 @@ header {
 
 .text2 {
   position: absolute;
-  top: 20%;
-  right: 10%;
+  top: 25%;
+  right: 7%;
   
 }
 
 .text3 {
   position: absolute;
-  top: 25%;
-  right: 15%;
+  top: 45%;
+  right: 60%;
 }
 
 
@@ -678,7 +678,7 @@ footer {
   }
   
   .car-2 {
-    background: url(assets/img/banner-m.webp) no-repeat left/cover;
+    background: url(assets/img/allergy-m.webp) no-repeat left/cover;
     width: 100%;
     height: 100%;
   }
@@ -705,18 +705,18 @@ footer {
   }
   
   .text2 {
-    width: 50%;
+    width: 45%;
     position: absolute;
-    top: 50%;
-    right: 10%;
+    top: 30%;
+    right: 5%;
     
   }
   
   .text3 {
-    width: 55%;
+    width: 45%;
     position: absolute;
-    top: 25%;
-    right: 8%;
+    top: 30%;
+    right: 50%;
   }
 
 }
