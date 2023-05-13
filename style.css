@@ -372,21 +372,21 @@ header {
 
 .text1 {
   position: absolute;
-  top: 27%;
+  top: 47%;
   right: 10%;
 }
 
 .text2 {
   position: absolute;
-  top: 25%;
-  right: 7%;
-  
+  top: 45%;
+  right: 4%;
+  width: 40%;
 }
 
 .text3 {
   position: absolute;
   top: 45%;
-  right: 60%;
+  right: 55%;
 }
 
 
