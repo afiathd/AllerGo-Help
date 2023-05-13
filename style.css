@@ -636,6 +636,28 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .text1 {
+    width: 60%;
+    position: absolute;
+    top: 65%;
+    right: 8%;
+  }
+  
+  .text2 {
+    width: 35%;
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    
+  }
+  
+  .text3 {
+    width: 45%;
+    position: absolute;
+    top: 30%;
+    right: 45%;
+  }
 }
 
 
