@@ -58,4 +58,9 @@ a:hover {
     margin-bottom: 10px;
     height: 100%;
   }
+
+  li {
+    margin-block: 10px;
+    font-size: 1.1rem;
+}
 }
