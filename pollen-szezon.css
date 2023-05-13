@@ -58,11 +58,11 @@
 
 .months-container {
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
 	height: auto;
-	
+	flex-wrap: wrap;
+
 }
 
 .active {
@@ -77,6 +77,8 @@
 	justify-content: flex-start;
 	border: 2px solid rgba(0, 0, 0, 1);
 	border-radius: 10px;
+	width: 15%;
+	min-width: 150px;
 
 
 }
@@ -102,16 +104,19 @@
 
 @media (max-width: 576px) {
 	.months-container {
-		width: 70%;
 		margin-inline: auto;
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: space-between;
+		align-items: center;
 		height: auto;	
+		width: 70%;
 	}
 
 	.elorejelzes h3 {
 		margin-inline: 10px;
+	}
+	.months {
+		width: 80%;
 	}
 }
